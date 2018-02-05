@@ -1,14 +1,16 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<ion-navbar>
+<ion-title>
+Bump
+</ion-title>
+</ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="has-header">
+<main [class.background]="event" class="has-header" ion-fixed>
+<button id="show-location" ion-button (click)="toggleLocation()">Toggle Location</button>
+<button id="" [class.selected]="isSeller" (click)="toggleSeller()" ion-button>Seller</button>
+<button id="" [class.selected]="isBuyer" (click)="toggleBuyer()" ion-button>Buyer</button>
+<p id="location" *ngIf="locationVisible">{{ location.lat }}, {{ location.lon }}</p>
+</main>
 </ion-content>

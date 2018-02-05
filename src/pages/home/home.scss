@@ -1,3 +1,44 @@
-page-home {
+page-home
+{
+    main
+    {
+        height: 100%;
+        width: 100vw;
+    }
 
+    [ion-button]:first-child
+    {
+        margin-top: 4vh;
+    }
+
+    [ion-button]
+    {
+        box-sizing: border-box;
+        width: 50vw;
+        margin: 2vh 25vw;
+        padding: 30px 30px;
+    }
+
+    #location
+    {
+        font-size: 20px;
+        width: 80vw;
+        margin: 5vh 10vw;
+        text-align: center;
+    }
+
+    .background
+    {
+        background-color: red;
+    }
+
+    #motion
+    {
+        text-align: center;
+    }
+
+    .selected
+    {
+        background-color: red;
+    }
 }
